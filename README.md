@@ -1,4 +1,4 @@
-# DM Core - FiveM Deathmatch Core
+# DM Core - FiveM Deathmatch Core [WIP]
 
 A comprehensive deathmatch core for FiveM servers with security features, HUD, and leaderboards.
 
