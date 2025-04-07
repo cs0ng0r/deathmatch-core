@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#hud-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+/* Player Info Section */
+#player-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+#money-display, #stats-display {
+    margin-bottom: 5px;
+}
+
+.money-item, .stat-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+}
+
+.money-label, .stat-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#cash {
+    color: #2ecc71;
+}
+
+#bank {
+    color: #3498db;
+}
+
+#kills {
+    color: #e74c3c;
+}
+
+#deaths {
+    color: #95a5a6;
+}
+
+/* Weapon Info Section */
+#weapon-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    min-width: 200px;
+}
+
+#weapon-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+#ammo-display {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+}
+
+/* Location Display */
+#location-display {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#street-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#zone-name {
+    color: #bdc3c7;
+    font-size: 14px;
+}
+
+/* Notifications */
+#notification-container {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 300px;
+}
+
+.notification {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.notification.success {
+    border-left: 5px solid #2ecc71;
+}
+
+.notification.error {
+    border-left: 5px solid #e74c3c;
+}
+
+.notification.info {
+    border-left: 5px solid #3498db;
+}
+
+/* HUD Toggles */
+.hidden {
+    display: none !important;
+}

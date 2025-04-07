@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Core HUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hud-container">
+        <!-- Player Info Section -->
+        <div id="player-info">
+            <div id="money-display">
+                <div class="money-item">
+                    <span class="money-label">CASH:</span>
+                    <span id="cash">$0</span>
+                </div>
+                <div class="money-item">
+                    <span class="money-label">BANK:</span>
+                    <span id="bank">$0</span>
+                </div>
+            </div>
+            
+            <div id="stats-display">
+                <div class="stat-item">
+                    <span class="stat-label">KILLS:</span>
+                    <span id="kills">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">DEATHS:</span>
+                    <span id="deaths">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">K/D:</span>
+                    <span id="kd-ratio">0.0</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Weapon Info Section -->
+        <div id="weapon-info">
+            <div id="weapon-name">-</div>
+            <div id="ammo-display">
+                <span id="ammo-count">0</span>
+                <span id="ammo-separator">/</span>
+                <span id="ammo-max">0</span>
+            </div>
+        </div>
+        
+        <!-- Location Display -->
+        <div id="location-display">
+            <div id="street-name">Unknown Location</div>
+            <div id="zone-name">Los Santos</div>
+        </div>
+        
+        <!-- Notifications -->
+        <div id="notification-container"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
