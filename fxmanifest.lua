@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'DM Core'
+author 'Cs0ng0r'
 description 'FiveM Deathmatch Core with Security Features'
 version '1.0.0'
 
